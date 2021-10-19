@@ -1,0 +1,86 @@
+/* header */
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid $header-border;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white-back;
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+// navbar 
+.navbar {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 0 0 80px;
+    height: 23px;
+}
+
+// menu
+.menu {
+    @include respons-left-margin(172, 1920);
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 71px;
+
+    @include lato-medium;
+    font-size: 20px;
+    white-space: nowrap;
+    color: $header-nav-font;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 71px;
+
+    &__link {
+        transition: 0.4s color;
+
+        &:hover {
+            color: $brend-font;
+        }
+    }
+}
+
+.action-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    @include lato-regular;
+
+    &__button {
+
+        transition: 0.1s color, 0.4s border-color, 0.4s background-color;
+
+        &--trial {
+            border: 1px solid transparent;
+            padding: 12px 49px;
+            background-color: $brend-color;
+            border-radius: 4px;
+            color: $light-font;
+
+            &:hover {
+                border-color: $brend-color;
+                background-color: transparent;
+            }
+        }
+
+        &:hover {
+            color: $brend-font;
+        }
+    }
+}

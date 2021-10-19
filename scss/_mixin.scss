@@ -1,0 +1,32 @@
+/* font family and weight */
+
+// lato
+@mixin lato-regular {
+    font-family: "Lato";
+}
+
+@mixin lato-medium {
+    font-family: "LatoMedium";
+}
+
+@mixin lato-semibold {
+    font-family: "LatoSemiBold";
+}
+
+// georgia
+@mixin georgia-regular {
+    font-family: "Georgia";
+    font-weight: normal;
+}
+
+@mixin georgia-bold {
+    font-family: "Georgia";
+    font-weight: bold;
+}
+
+/* menu margin left */
+
+@mixin respons-left-margin ($margin, $screen) {
+    $percent: $margin / $screen;
+    margin-left: 100vw * $percent;
+}

@@ -4,6 +4,7 @@
 + HTML5
 + CSS3/ препроцессор SCSS
 + Javascript (ES6+)
++ BEM methodology
 + Git/GitHub
 
 ## Задачи решены:
@@ -18,7 +19,7 @@
 + header
 + main
   + hero
-  + features
+  + how-it-works
   + about
   + product
 + footer
