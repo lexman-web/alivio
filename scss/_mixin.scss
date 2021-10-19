@@ -24,9 +24,35 @@
     font-weight: bold;
 }
 
-/* menu margin left */
+
+/* responsive margin and padding */
 
 @mixin respons-left-margin ($margin, $screen) {
     $percent: $margin / $screen;
     margin-left: 100vw * $percent;
+}
+
+@mixin descript-paddin-top () {
+    padding-top: 172px;
+    @media screen and (max-width: 1600px) {
+        padding-top: 162px;
+    }
+    @media screen and (max-width: 1440px) {
+        padding-top: 142px;
+    }
+    @media screen and (max-width: 1200px) {
+        padding-top: 122px;
+    }
+    @media screen and (max-width: 992px) {
+        padding-top: 100px;
+    }
+}
+
+
+/* responsive font */
+
+@mixin responsive-font($maxSize, $minSize, $maxScreen, $minScreen) {
+    $sizeDifference: $maxSize - $minSize;
+    $screenDifference: $maxScreen - $minScreen;
+    font-size: calc( #{$minSize + px} + #{$sizeDifference} * ((100vw - #{$minScreen + px}) / #{$screenDifference}));
 }

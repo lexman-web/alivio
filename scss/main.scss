@@ -5,10 +5,9 @@
 @import "var";
 @import "mixin";
 @import "reset";
-
 // section
 @import "section/header";
-
+@import "section/hero";
 // media queries
 @import "media/desktop";
 @import "media/table";
