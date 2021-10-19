@@ -1,0 +1,64 @@
+/* lato */
+// regular
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato//Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato//Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato//Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato//Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+// medium
+@font-face {
+    font-family: 'LatoMedium';
+    src: url('../fonts/Lato/Lato-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato/Lato-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato/Lato-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+// semibold
+@font-face {
+    font-family: 'LatoSemibold';
+    src: url('../fonts/Lato/Lato-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato/Lato-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* georgia */
+// regular
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia/Georgia.eot');
+	src: local('Georgia'),
+		url('../fonts/Georgia/Georgia.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia/Georgia.woff') format('woff'),
+		url('../fonts/Georgia/Georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// bold
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia/Georgia-Bold.eot');
+	src: local('Georgia Bold'), local('Georgia-Bold'),
+		url('../fonts/Georgia/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia/Georgia-Bold.woff') format('woff'),
+		url('../fonts/Georgia/Georgia-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
