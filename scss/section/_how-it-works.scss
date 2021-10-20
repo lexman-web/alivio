@@ -1,0 +1,109 @@
+/* how-it-works */
+
+.how-it-works {
+    padding: 170px 0 50px;
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__heading {
+        margin-bottom: 185px;
+    }
+    &__title {
+        @include lato-regular;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 157%;
+        color: $main-font;
+    }
+    &__descript {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+        align-items: center;
+        @media screen and (max-width: 1240px) {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            max-width: 590px;
+            gap: 30px;
+        }
+    }
+    &__sub-title {
+        @include responsive-font(50, 32, 1920, 320);
+        line-height: 157%;
+        color: $brend-font;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 150%;
+        color: $main-font;
+    }
+    // list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(340px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 95px;
+        @media screen and (max-width: 1245px) {
+            grid-template-columns: 390px 390px;
+        }
+        @media screen and (max-width: 910px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+
+/* work-step */
+
+.work-step {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    &:nth-child(2) {
+        margin-top: 200px;
+        @media screen and (max-width: 1245px) {
+            margin-top: 0;
+            justify-content: space-between;
+        }
+    }
+    &__title {
+        margin-bottom: 55px;
+        padding-left: 85px;
+        position: relative;
+        @include responsive-font(30, 25, 1920, 320);
+        white-space: nowrap;
+        &::before {
+            position: absolute;
+            bottom: -22px;
+            left: 0;
+            @include responsive-font(150, 110, 1920, 320);
+            color: transparentize($brend-font, 0.8);
+        }
+        &--first::before {
+            content: "01";
+        }
+        &--second::before {
+            content: "02";
+        }
+        &--last::before {
+            content: "03";
+        }
+    }
+    &__text {
+        margin-bottom: 60px;
+        font-size: 20px;
+        line-height: 150%;
+        color: $main-font;
+    }
+    &__picture {
+        @media screen and (max-width: 910px) {
+            height: 300px;
+        }
+    }
+    &__image {
+        object-fit: cover;
+    }
+}

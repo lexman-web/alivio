@@ -13,15 +13,17 @@
         margin: 0 auto;
         padding: 0 15px;
     }
-    &::after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid $header-border;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 20;
+    @media screen and (max-width: 992px) {
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid $header-border;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
     }
 }
 
